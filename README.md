@@ -11,4 +11,5 @@
   * try to use multi-thread to speed up 
  
 ## TODO
-  * speed up frame transfer using multiprcess
+  * speed up frame transfer using multi-threading (FPS 6.6 -> 7.6 on resnet18) 
+  * multi-processing not so fast (#TODO)
