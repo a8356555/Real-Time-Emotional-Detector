@@ -12,4 +12,4 @@
  
 ## TODO
   * speed up frame transfer using multi-threading (FPS 6.6 -> 7.6 on resnet18) 
-  * multi-processing not so fast (#TODO)
+  * multi-processing (FPS 7.7 fastest)
