@@ -44,16 +44,16 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
             - custom (for np)
             10 loops, best of 5: 7.23 µs per loop
 
-*. Evaluate transform function for prediction
-    * numpy to torch (raw) (t3) (fastest)
-    * numpy + Augmentation (t2) (2nd)
-    * pil + transforms (3rd)
-    * numpy to pil + transforms (t1) (slowest)
+* Evaluate transform function for prediction
+    1. numpy to torch (raw) (t3) (fastest)
+    2. numpy + Augmentation (t2) (2nd)
+    3. pil + transforms (3rd)
+    4. numpy to pil + transforms (t1) (slowest)
 
-*. Evaluate image transfer approach through flask
-    * open image through bytes (io) (fastest)
-    * use io.Bytes to wrap (wio) (2th)
-    * encode through base64 (b64) (slowest)
+* Evaluate image transfer approach through flask
+    1. open image through bytes (io) (fastest)
+    2. use io.Bytes to wrap (wio) (2th)
+    3. encode through base64 (b64) (slowest)
 
    transform + transfer combination results: approach, total time in 100 loops (second)        
          
