@@ -18,31 +18,30 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
     3. torchvision.transforms (for pil) (slow)
     
             ToTensor
-            - transform (for pil)
-            10 loops, best of 5: 2.87 ms per loop
-            - transform (for np)
-            10 loops, best of 5: 1.9 ms per loop
-            - A.ToTensorV2 (for np)
-            10 loops, best of 5: 7.67 µs per loop
-            - custom (for np)
-            10 loops, best of 5: 794 ns per loop
+                - transform (for pil)
+                    10 loops, best of 5: 2.87 ms per loop
+                - transform (for np)
+                    10 loops, best of 5: 1.9 ms per loop
+                - A.ToTensorV2 (for np)
+                    10 loops, best of 5: 7.67 µs per loop
+                - custom (for np)
+                    10 loops, best of 5: 794 ns per loop
 
             Resize
-            - transform (for pil)
-            10 loops, best of 5: 2.8 ms per loop
-            - A.Resize (for np)
-            10 loops, best of 5: 1.19 ms per loop
-            - custom (for np)
-            10 loops, best of 5: 1.63 ms per loop
+                - transform (for pil)
+                    10 loops, best of 5: 2.8 ms per loop
+                - A.Resize (for np)
+                    10 loops, best of 5: 1.19 ms per loop
+                - custom (for np)
+                    10 loops, best of 5: 1.63 ms per loop
 
             RandomCrop
-            - transform (for pil)
-            The slowest run took 6.38 times longer than the fastest. This could mean that an intermediate result is being cached.
-            10 loops, best of 5: 34.3 µs per loop
-            - A.randomcrop (for np)
-            10 loops, best of 5: 8.74 µs per loop
-            - custom (for np)
-            10 loops, best of 5: 7.23 µs per loop
+                - transform (for pil)
+                    10 loops, best of 5: 34.3 µs per loop
+                - A.randomcrop (for np)
+                    10 loops, best of 5: 8.74 µs per loop
+                - custom (for np)
+                    10 loops, best of 5: 7.23 µs per loop
 
 * Evaluate transform function for prediction
     1. numpy to torch (raw) (t3) (fastest)
