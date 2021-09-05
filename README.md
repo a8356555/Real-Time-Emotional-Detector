@@ -2,17 +2,18 @@
 https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scrollTo=yWajLJ9RtVv2&uniqifier=1
 
 ## Target
-* familiar with pytorch pipelines
-    1. Custom Pytorch Dataset
-    2. Custom Pytorch Transform Class
-    3. Fine-tuning Pytorch Model (Resnet)
+1. familiar with pytorch pipelines
+    a. Custom Pytorch Dataset    
+    b. Custom Pytorch Transform Class
+    c. Fine-tuning Pytorch Model (Resnet)
 
-* Deploy on Flask
-    1. try to use base64 to encode & decode image bytes
-    2. try to use multi-thread to speed up 
+2. Deploy using Flask
+    a. try to use base64 to encode & decode image bytes
+    b. try to use io to wrap image 
+    c. try to use multi-thread/multi-processing to speed up 
  
 ## TEST
-* Evaluate training transform
+1. Evaluate training transform
     1. custom implementation (for np) (fastest)
     2. Albumentation (for np) (resize the fastest)
     3. torchvision.transforms (for pil) (slow)
