@@ -1,7 +1,12 @@
-# Real-Time-Emotional-Detector
+# Table of Contents
+* [Real-Time Emotional Detector](#rted)
+    1. [Target](#ta)
+    2. [Experiment](#ex)
+    3. [TODO](#todo)
+# <a name="rted">Real-Time Emotional Detector
 https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scrollTo=yWajLJ9RtVv2&uniqifier=1
 
-## Target
+## <a name="ta">Target
 #### 1. Be familiar with pytorch pipelines
 
     a. Custom Pytorch Dataset   
@@ -18,7 +23,7 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
     
     c. Try to use multi-thread/multi-processing to speed up 
  
-## TEST
+## <a name="ex">Experiment
 #### 1. Evaluate training transform
 
     a. Custom implementation (for np) (fastest)
@@ -96,7 +101,7 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
 
     c. Using multi-process (using process=2): FPS 1.5
     
-## TODO
+## <a name="todo">TODO
 #### 1. speed up inference to real-time level
 
     a. Model Compression / pruning / quantizaion
