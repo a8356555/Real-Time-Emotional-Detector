@@ -3,20 +3,29 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
 
 ## Target
 1. familiar with pytorch pipelines
-    a. Custom Pytorch Dataset    
+
+    a. Custom Pytorch Dataset   
+    
     b. Custom Pytorch Transform Class
+    
     c. Fine-tuning Pytorch Model (Resnet)
 
 2. Deploy using Flask
+
     a. try to use base64 to encode & decode image bytes
+    
     b. try to use io to wrap image 
+    
     c. try to use multi-thread/multi-processing to speed up 
  
 ## TEST
 1. Evaluate training transform
-    1. custom implementation (for np) (fastest)
-    2. Albumentation (for np) (resize the fastest)
-    3. torchvision.transforms (for pil) (slow)
+
+    a. custom implementation (for np) (fastest)
+    
+    b. Albumentation (for np) (resize the fastest)
+    
+    c. torchvision.transforms (for pil) (slow)
     
             ToTensor
                 - transform (for pil)
@@ -44,18 +53,25 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
                 - custom (for np)
                     10 loops, best of 5: 7.23 µs per loop
 
-* Evaluate transform function for prediction
-    1. numpy to torch (raw) (t3) (fastest)
-    2. numpy + Augmentation (t2) (2nd)
-    3. pil + transforms (3rd)
-    4. numpy to pil + transforms (t1) (slowest)
+2. Evaluate transform function for prediction
 
-* Evaluate image transfer approach through flask
-    1. open image through bytes (io) (fastest)
-    2. use io.Bytes to wrap (wio) (2th)
-    3. encode through base64 (b64) (slowest)
+    a. numpy to torch (raw) (t3) (fastest)
+    
+    b. numpy + Augmentation (t2) (2nd)
+    
+    c. pil + transforms (3rd)
+    
+    d. numpy to pil + transforms (t1) (slowest)
 
-   transform + transfer combination results: approach, total time in 100 loops (second)        
+3. Evaluate image transfer approach through flask
+
+    a. open image through bytes (io) (fastest)
+    
+    b. use io.Bytes to wrap (wio) (2th)
+    
+    c. encode through base64 (b64) (slowest)
+
+2+3. Combination results: approach, total time in 100 loops (second)        
          
          [['approach_io_np_t3', 3.908006429672241],
           ['approach_io_np_t2', 3.9259140491485596],
@@ -71,7 +87,10 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
           ['approach_b64_np_t1', 13.37218427658081]]
 
        
-* Speed up frame transfer using multi-threading / multi-processing (need more try) on resnet18
-    1. raw method (single thread): FPS 5.7
-    2. multi-thread: FPS 4.4
-    3. multi-process (using process=2): FPS 1.5
+4. Speed up frame transfer using multi-threading / multi-processing (need more try) on resnet18
+
+    a. raw method (single thread): FPS 5.7
+
+    b. multi-thread: FPS 4.4
+
+    c. multi-process (using process=2): FPS 1.5
