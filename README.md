@@ -61,6 +61,11 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
             - custom (for np)
                 10 loops, best of 5: 7.23 µs per loop
 
+<img src="https://github.com/a8356555/RealTimeEmotionalDetector/experiment_pictures/to_tensor_speed.png" width="200" height="200">
+<img src="https://github.com/a8356555/RealTimeEmotionalDetector/experiment_pictures/resize_speed.png" width="200" height="200">
+<img src="https://github.com/a8356555/RealTimeEmotionalDetector/experiment_pictures/random_crop_speed.png" width="200" height="200">    
+    
+    
 #### 2. Evaluate transform function for prediction
 
     a. Using numpy to torch (raw) (t3) (fastest)
