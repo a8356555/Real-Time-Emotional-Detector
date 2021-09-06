@@ -61,9 +61,9 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
             - custom (for np)
                 10 loops, best of 5: 7.23 µs per loop
 
-<img src="https://github.com/a8356555/RealTimeEmotionalDetector/experiment_pictures/to_tensor_speed.png" width="200" height="200">
-<img src="https://github.com/a8356555/RealTimeEmotionalDetector/experiment_pictures/resize_speed.png" width="200" height="200">
-<img src="https://github.com/a8356555/RealTimeEmotionalDetector/experiment_pictures/random_crop_speed.png" width="200" height="200">    
+<img src="./experiment_pictures/to_tensor_speed.png" width="300" height="350">
+<img src="./experiment_pictures/resize_speed.png" width="300" height="350">
+<img src="./experiment_pictures/random_crop_speed.png" width="300" height="350">    
     
     
 #### 2. Evaluate transform function for prediction
@@ -98,7 +98,8 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
           ['approach_b64_pil', 13.032054662704468],
           ['approach_wio_np_t1', 13.037485122680664],
           ['approach_b64_np_t1', 13.37218427658081]]
-
+    
+<img src="./experiment_pictures/time_spent_on_different_approach.png" width="500" height="500">    
 
 #### 4. Speed up frame transfer using multi-threading / multi-processing (need more try) on resnet18
 
