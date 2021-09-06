@@ -92,7 +92,7 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
           ['approach_wio_np_t1', 13.037485122680664],
           ['approach_b64_np_t1', 13.37218427658081]]
 
-       
+
 #### 4. Speed up frame transfer using multi-threading / multi-processing (need more try) on resnet18
 
     a. Using raw method (single thread): FPS 5.7
@@ -102,10 +102,13 @@ https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scroll
     c. Using multi-process (using process=2): FPS 1.5
     
 ## <a name="todo">TODO
-#### 1. speed up inference to real-time level
+#### 1. Speed up inference to real-time level
 
     a. Model Compression / pruning / quantizaion
     
     b. TensorRT / openvino / tvm
 
     c. Better usage of multi-threading / multi-processing
+
+#### 2. Face bounding box detection
+#### 3. Velance / Arousal score transformation
