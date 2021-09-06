@@ -1,11 +1,13 @@
+Experimenting on
+
+https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
+
 # Table of Contents
 * [Real-Time Emotional Detector](#rted)
     1. [Target](#ta)
     2. [Experiment](#ex)
     3. [TODO](#todo)
 # <a name="rted">Real-Time Emotional Detector
-https://colab.research.google.com/drive/1B-gQMwyIadw3_SvZWKRIV8EYNdaq_esW#scrollTo=yWajLJ9RtVv2&uniqifier=1
-
 ## <a name="ta">Target
 #### 1. Be familiar with pytorch pipelines
 
