@@ -51,11 +51,11 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
                 10 loops, best of 5: 8.74 µs per loop
             - custom (for np)
                 10 loops, best of 5: 7.23 µs per loop
-
-<img align="left" src="./experiment_pictures/to_tensor_speed.png" width="300" height="350">
-<img align="center" src="./experiment_pictures/resize_speed.png" width="300" height="350">
-<img align="right" src="./experiment_pictures/random_crop_speed.png" width="300" height="350">    
-    
+<p align="center">
+    <img src="./experiment_pictures/to_tensor_speed.png" width="300" height="350">
+    <img src="./experiment_pictures/resize_speed.png" width="300" height="350">
+    <img src="./experiment_pictures/random_crop_speed.png" width="300" height="350">
+</p>
     
 #### 2. Evaluate transform function for prediction
 * Using numpy to torch (raw) (t3) (fastest)   
@@ -82,9 +82,11 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
           ['approach_b64_pil', 13.032054662704468],
           ['approach_wio_np_t1', 13.037485122680664],
           ['approach_b64_np_t1', 13.37218427658081]]
-    
-<img align="center" src="./experiment_pictures/time_spent_on_different_approach.png" width="400" height="400">
 
+<p align="center">    
+    <img src="./experiment_pictures/time_spent_on_different_approach.png" width="500" height="500">
+</p>
+    
 #### 4. Speed up frame transfer using multi-threading / multi-processing (need more try) on resnet18
 * Using raw method (single thread): FPS 5.7
 * Using multi-thread: FPS 4.4
