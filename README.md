@@ -15,9 +15,9 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
 * Fine-tuning Pytorch Model (Resnet)
 
 #### 2. Deploy using Flask
-* Try to use base64 to encode & decode image bytes  
-* Try to use io to wrap image   
-* Try to use multi-thread/multi-processing to speed up 
+* Try to use base64 to encode & decode image bytes. 
+* Try to use io to wrap image.
+* Try to use multi-thread/multi-processing to speed up.
  
 ## <a name="ex">Experiment
 #### 1. Evaluate training transform
