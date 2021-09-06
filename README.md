@@ -10,31 +10,22 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
 # <a name="rted">Real-Time Emotional Detector
 ## <a name="ta">Target
 #### 1. Be familiar with pytorch pipelines
-
-    a. Custom Pytorch Dataset   
-
-    b. Custom Pytorch Transform Class
-
-    c. Fine-tuning Pytorch Model (Resnet)
+* Custom Pytorch Dataset   
+* Custom Pytorch Transform Class
+* Fine-tuning Pytorch Model (Resnet)
 
 #### 2. Deploy using Flask
-
-    a. Try to use base64 to encode & decode image bytes
-    
-    b. Try to use io to wrap image 
-    
-    c. Try to use multi-thread/multi-processing to speed up 
+* Try to use base64 to encode & decode image bytes  
+* Try to use io to wrap image   
+* Try to use multi-thread/multi-processing to speed up 
  
 ## <a name="ex">Experiment
 #### 1. Evaluate training transform
-
-    a. Custom implementation (for np) (fastest)
+* Custom implementation (for np) (fastest)  
+* Using Albumentation (for np) (resize the fastest)  
+* Using torchvision.transforms (for pil) (slow)
+* results:
     
-    b. Using Albumentation (for np) (resize the fastest)
-    
-    c. Using torchvision.transforms (for pil) (slow)
-    
-    results:
         ToTensor
             - transform (for pil)
                 10 loops, best of 5: 2.87 ms per loop
@@ -67,22 +58,15 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
     
     
 #### 2. Evaluate transform function for prediction
-
-    a. Using numpy to torch (raw) (t3) (fastest)
-    
-    b. Using numpy + Augmentation (t2) (2nd)
-    
-    c. Using pil + transforms (3rd)
-    
-    d. Using numpy to pil + transforms (t1) (slowest)
+* Using numpy to torch (raw) (t3) (fastest)   
+* Using numpy + Augmentation (t2) (2nd)   
+* Using pil + transforms (3rd)   
+* Using numpy to pil + transforms (t1) (slowest)
 
 #### 3. Evaluate image transfer approach through flask
-
-    a. Opening image through bytes (io) (fastest)
-    
-    b. Using io.Bytes to wrap (wio) (2th)
-    
-    c. Encoding with base64 (b64) (slowest)
+* Opening image through bytes (io) (fastest)   
+* Using io.Bytes to wrap (wio) (2th)   
+* Encoding with base64 (b64) (slowest)
 
 2+3. Combination results: approach, total time in 100 loops (second)        
          
@@ -99,24 +83,18 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
           ['approach_wio_np_t1', 13.037485122680664],
           ['approach_b64_np_t1', 13.37218427658081]]
     
-<img src="./experiment_pictures/time_spent_on_different_approach.png" width="500" height="500">    
+<img src="./experiment_pictures/time_spent_on_different_approach.png" width="400" height="400">
 
 #### 4. Speed up frame transfer using multi-threading / multi-processing (need more try) on resnet18
-
-    a. Using raw method (single thread): FPS 5.7
-
-    b. Using multi-thread: FPS 4.4
-
-    c. Using multi-process (using process=2): FPS 1.5
+* Using raw method (single thread): FPS 5.7
+* Using multi-thread: FPS 4.4
+* Using multi-process (using process=2): FPS 1.5
     
 ## <a name="todo">TODO
 #### 1. Speed up inference to real-time level
-
-    a. Model Compression / pruning / quantizaion
-    
-    b. TensorRT / openvino / tvm
-
-    c. Better usage of multi-threading / multi-processing
+* Model Compression / pruning / quantizaion   
+* TensorRT / openvino / tvm
+* Better usage of multi-threading / multi-processing
 
 #### 2. Face bounding box detection
 #### 3. Velance / Arousal score transformation
