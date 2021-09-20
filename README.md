@@ -9,12 +9,13 @@ https://colab.research.google.com/drive/14kwXrgaAsNHrumSzj_VvW8OJMj_w4wIH
     3. [TODO](#todo)
 # <a name="rted">Real-Time Emotional Detector
 ## <a name="ta">Target
-#### 1. Be familiar with pytorch pipelines
+#### 1. Be familiar with the life cycle of DL product.
+#### 2. Be familiar with pytorch pipelines.
 * Custom Pytorch Dataset   
 * Custom Pytorch Transform Class
 * Fine-tuning Pytorch Model (Resnet)
 
-#### 2. Deploy using Flask
+#### 3. Deploy using Flask.
 * Try to use base64 to encode & decode image bytes. 
 * Try to use io to wrap image.
 * Try to use multi-thread/multi-processing to speed up.
